@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 
-public class ToorbarFragment extends Fragment implements SeekBar.OnSeekBarChangeListener {
+public class ToorbarFragment1 extends Fragment implements SeekBar.OnSeekBarChangeListener {
 
     private int seekvalue;
 
@@ -28,7 +28,7 @@ public class ToorbarFragment extends Fragment implements SeekBar.OnSeekBarChange
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v =  inflater.inflate(R.layout.fragment_turbar, container, false);
+        View v =  inflater.inflate(R.layout.fragment_turbar1, container, false);
 
         editText = v.findViewById(R.id.editTextText);
 
@@ -49,7 +49,7 @@ public class ToorbarFragment extends Fragment implements SeekBar.OnSeekBarChange
         return v;
     }
 
-    public void ButtonClicker(View v)
+    public void ButtonClicker(View view)
     {
         activityCallBack.onButtonClick(seekvalue,editText.getText().toString());
     }

@@ -1,22 +1,15 @@
 package com.example.calculadomarcos;
 
 import android.os.Bundle;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentActivity;
 
-import org.w3c.dom.Text;
-
-public class MainActivity2 extends FragmentActivity implements ToorbarFragment.ToolbarListener {
+public class MainActivity2 extends FragmentActivity implements ToorbarFragment1.ToolbarListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,7 +107,7 @@ public class MainActivity2 extends FragmentActivity implements ToorbarFragment.T
 
     @Override
     public void onButtonClick(int size, String text) {
-       TextFragment textFragment = (TextFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView3);
+       TextFragment1 textFragment = (TextFragment1) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView3);
 
        if(textFragment != null){
 

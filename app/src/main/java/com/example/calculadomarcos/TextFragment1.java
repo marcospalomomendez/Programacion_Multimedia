@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class TextFragment extends Fragment {
+public class TextFragment1 extends Fragment {
 
     private TextView textView;
 
